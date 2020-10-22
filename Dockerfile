@@ -1,4 +1,4 @@
-FROM alpine:3.7
+FROM alpine:latest
 LABEL version="1.0"
 LABEL description="Docker Image of FIRST FTC Scoring System."
 LABEL maintainer="mglennon@firstchesapeake.org"
