@@ -26,3 +26,8 @@ Uploads | /app/uploads
 Description | Port
 ---- | ----
 HTTP Server | 80/tcp
+
+## CHANGES
+Date | Description
+---- | ----
+2020-10-22 | Switched the base image to Debian to solve Alpine incompatibility with MatchMaker. (Compiler mismatch.)
