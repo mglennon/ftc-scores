@@ -7,7 +7,7 @@ Created to facilitate Semi-Remote Play.
 
 Currently Running the 2020-2021 Season BETA (Version 2.0.0).
 The version will be updated to the latest official version once it's released.
-(If a tar.gz version of the application is ever published by FIRST, I will update this Dockerfile to automatically fetch the latest version at startup.)
+The Docker Build will download the given version from the official FTC Github and build.
 
 In Order to function, you'll need to launch the software locally, create a new user and a test event, and then copy your local db/ directory files
 to the volume path you've configured for the db files.
