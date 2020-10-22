@@ -7,4 +7,4 @@ WORKDIR /app
 COPY app/ .
 EXPOSE 80/tcp
 VOLUME ["/app/db", "/app/uploads"]
-CMD ["app/FIRST-Tech-Challenge-Live-UNIX"]
+CMD ["/app/FIRST-Tech-Challenge-Live-UNIX"]
