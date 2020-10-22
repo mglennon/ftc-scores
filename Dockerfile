@@ -5,7 +5,7 @@ LABEL maintainer="mglennon@firstchesapeake.org"
 RUN apk --update add openjdk8-jre
 WORKDIR /app
 COPY app/ .
-COPY start.sh .
-EXPOSE 8080/tcp
+WORKDIR /app/bin
+EXPOSE 80/tcp
 VOLUME ["/app/db", "/app/uploads", "/app/logs"]
-CMD ["./start.sh"]
+CMD ["./FTCLocal"]
