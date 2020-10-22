@@ -7,5 +7,5 @@ WORKDIR /app
 COPY app/ .
 WORKDIR /app/bin
 EXPOSE 80/tcp
-VOLUME ["/app/db", "/app/uploads", "/app/logs"]
+VOLUME ["/app/db", "/app/uploads", "/app/bin/logs"]
 CMD ["./FTCLocal"]
