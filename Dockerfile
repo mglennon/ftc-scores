@@ -16,17 +16,18 @@ RUN wget https://github.com/FIRST-Tech-Challenge/scorekeeper/releases/download/$
 
 
 #FINAL IMAGE
-FROM alpine:latest
+FROM debian:latest
 
 # Specify your choice of JAVA
-ARG JAVA=openjdk11-jre
+ARG JAVA=openjdk-11-jre
 
 LABEL version="1.1"
 LABEL description="Docker Image of FIRST FTC Scoring System."
 LABEL maintainer="mglennon@firstchesapeake.org"
 
 
-RUN apk --update add ${JAVA}
+RUN apt-get update \
+    && apt-get install ${JAVA} -y
 WORKDIR /app
 COPY --from=build /tmp/app/ .
 WORKDIR /app/bin
