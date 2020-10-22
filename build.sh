@@ -1,3 +1,2 @@
-#!/usr/bin/bash
-git pull github master
+git pull github main
 docker build -t ftc-scores .
