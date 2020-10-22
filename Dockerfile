@@ -2,9 +2,10 @@ FROM alpine:3.7
 LABEL version="1.0"
 LABEL description="Docker Image of FIRST FTC Scoring System."
 LABEL maintainer="mglennon@firstchesapeake.org"
-RUN apk --update add openjdk7-jre
+RUN apk --update add openjdk8-jre
 WORKDIR /app
 COPY app/ .
-EXPOSE 80/tcp
-VOLUME ["/app/db", "/app/uploads"]
-CMD ["/app/app/FIRST-Tech-Challenge-Live-UNIX"]
+COPY start.sh .
+EXPOSE 8080/tcp
+VOLUME ["/app/db", "/app/uploads", "/app/logs"]
+CMD ["./start.sh"]

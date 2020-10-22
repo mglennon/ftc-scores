@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 TGTFILE=./FTCLocal
 
 DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
