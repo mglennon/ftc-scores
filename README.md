@@ -5,8 +5,7 @@ Docker Image for ftc-scores
 This is a Docker Image for the [FIRST](https://firstinspires.org) FTC Competition Scoring System.
 Created to facilitate Semi-Remote Play.
 
-Currently Running the 2020-2021 Season BETA (Version 2.0.0).
-The version will be updated to the latest official version once it's released.
+Currently Running the 2020-2021 Season (See Changes below for current version).
 The Docker Build will download the given version from the official FTC Github and build.
 
 In Order to function, you'll need to launch the software locally, create a new user and a test event, and then copy your local db/ directory files
