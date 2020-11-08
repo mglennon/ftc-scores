@@ -30,4 +30,5 @@ HTTP Server | 80/tcp
 ## CHANGES
 Date | Description
 ---- | ----
+2020-11-08 | Updated to version 2.1.0
 2020-10-22 | Switched the base image to Debian to solve Alpine incompatibility with MatchMaker. (Compiler mismatch.)

@@ -5,7 +5,7 @@ FROM alpine:latest as build
 # VARS
 # Find out the latest version of the scoring system here:
 #   https://github.com/FIRST-Tech-Challenge/scorekeeper/releases
-ARG APP_VERSION=v2.0.0
+ARG APP_VERSION=v2.1.0
 
 # Download the scoring application and unpack it.
 WORKDIR /tmp
